@@ -1,0 +1,10 @@
+<%= javascript_include_tag "events/new"%>
+
+<h1>New event</h1>
+<div id='calendar'></div>
+<div id='event'></div>
+
+<%= render 'form' %>
+
+<div id="after_create">Hi</div>
+<%= link_to 'Back', events_path %>

@@ -1,0 +1,18 @@
+<%= form_for(@event, :remote => true) do |f| %>
+ 
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :when %><br />
+    <%= f.datetime_select :when %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
