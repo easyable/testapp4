@@ -9,7 +9,7 @@ class EventsController < ApplicationController
     
     respond_to do |format|  
       if @event.save  
-        format.js  
+        format.js { render :partial => "calendar" }
       else  
         format.js { render :action => "new" }  
       end  

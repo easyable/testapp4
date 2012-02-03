@@ -1,4 +1,10 @@
-<%= javascript_include_tag "events/new"%>
+<script>
+	var date = new Date();
+	var d = date.getDate();
+	var m = date.getMonth();
+	var y = date.getFullYear();
+</script>
+<%= render :partial=>'calendar' %>
 
 <h1>New event</h1>
 <div id='calendar'></div>
@@ -8,3 +14,4 @@
 
 <div id="after_create">Hi</div>
 <%= link_to 'Back', events_path %>
+
